@@ -2,81 +2,79 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ludovic Thenot</title>
     <link rel="stylesheet" href="eval.css">
 </head>
 <body>
-    <!-- Titre principal -->
-    <div class="titre-principal">
+    <header class="header">
         <h1>Page d'Évaluation Ludovic Thenot</h1>
-        <p class="sous-titre">Salut ! je suis un sous-titre !</p>
-    </div>
+        <p class="header__subtitle">Salut ! je suis un sous-titre !</p>
+    </header>
 
-    <!-- Section Hero -->
-    <div class="hero">
+    <main>
+        <section class="hero">
         <h2>LOTERIE SPECIAL</h2>
         <p>RECOIS 100euro GRATUITEMENT !</p>
-        <button>100euro GRATUITEMENT !</button>
+            <button class="hero__button">100euro GRATUITEMENT !</button>
         <p>C'est faux si jamais.</p>
-    </div>
+        </section>
 
-    <!-- Section Cartes -->
-    <div class="container">
-        <h2 class="titre-gauche">Liste de Noel</h2>
-        <p class="sous-titre-gauche">Ps : j'ai pas de Cookie Pere noel debrouille toi.</p>
+        <section class="section">
+            <h2 class="section__title">Liste de Noel</h2>
+            <p class="section__subtitle">Ps : j'ai pas de Cookie Pere noel debrouille toi.</p>
         
-        <div class="grille-cartes">
-            <button class="carte" onclick="alert('Tomate cerise sélectionnée!')">
+            <div class="cards-grid">
+                <article class="card">
                 <h3>Tomate cerise</h3>
                 <p>je crois qu'il doit y en rester au frigo mais j'aime bien</p>
-                <span class="badge">A prendre</span>
-            </button>
-            <button class="carte" onclick="alert('Lait sélectionné!')">
+                    <span class="card__badge">A prendre</span>
+                </article>
+                <article class="card">
                 <h3>Lait</h3>
                 <p>y'en a jamais assez de toute façon..</p>
-                <span class="badge">A prendre</span>
-            </button>
-            <button class="carte" onclick="alert('Croquettes pour chat sélectionnées!')">
+                    <span class="card__badge">A prendre</span>
+                </article>
+                <article class="card">
                 <h3>Croquettes pour chat</h3>
                 <p>une fois par mois un paquet pour mes deux chat (c'est goinfre)</p>
-                <span class="badge">A prendre (meme si pas envie)</span>
-            </button>
-            <button class="carte" onclick="alert('Écharpe sélectionnée!')">
+                    <span class="card__badge">A prendre (meme si pas envie)</span>
+                </article>
+                <article class="card">
                 <h3>Une echarpe</h3>
                 <p>J'ai perdu la mienne</p>
-                <span class="badge">j'ai l'seum..</span>
-            </button>
+                    <span class="card__badge">j'ai l'seum..</span>
+                </article>
         </div>
-    </div>
+        </section>
 
-    <!-- Section Comment ça marche -->
-    <div class="container">
-        <h2 class="titre-gauche">Mes matinée :</h2>
-        <div class="etapes">
-            <div class="etape">
-                <div class="numero">1</div>
+        <section class="section">
+            <h2 class="section__title">Mes matinée :</h2>
+            <div class="steps">
+                <article class="step">
+                    <div class="step__number">1</div>
                 <h3>Reveil</h3>
                 <p>Comprendre qu'il faut ce reveiller (galerer)</p>
-            </div>
-            <div class="etape">
-                <div class="numero">2</div>
+                </article>
+                <article class="step">
+                    <div class="step__number">2</div>
                 <h3>Compliqué</h3>
                 <p>Un reveil compliqué + doute de vouloir redormir</p>
-            </div>
-            <div class="etape">
-                <div class="numero">3</div>
+                </article>
+                <article class="step">
+                    <div class="step__number">3</div>
                 <h3>Dormir</h3>
                 <p>Bon, pas grave j'ai le temp encore...</p>
+                </article>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <!-- Encadré infos importantes -->
-    <div class="container">
+        <section class="section">
         <div class="info-box">
-            <h2 class="titre-gauche">Au final...</h2>
-            <p class="texte-final">j'ai pas reçu mes 100euro, ma mere ma dit que le pere Noel n'existait pas, et je suis arriver en retard.</p>
+                <h2 class="section__title">Au final...</h2>
+                <p class="info-box__text">j'ai pas reçu mes 100euro, ma mere ma dit que le pere Noel n'existait pas, et je suis arriver en retard.</p>
         </div>
-    </div>
+        </section>
+    </main>
 </body>
 </html>
